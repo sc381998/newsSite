@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News Site</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header component-->
+    <div class="header">
+      <div class="top-header container">
+        <ul
+          class="col-md-12 nav navbar navbar-light bg-light d-flex justify-content-between"
+        >
+          <li class="nav-item col-md-4 col-sm-12 d-flex justify-content-start p-0">
+            <form class="search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Type Keyword to Search"
+                />
+                <div class="input-group-btn">
+                  <button class="btn btn-default search-icon" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item col-md-4 d-flex justify-content-center">
+            <div class="center-col title">
+              <div class="f-s-1-2">news</div>
+              <small class="f-s-0-7">Wednesday, September 9th 2020</small>
+            </div>
+          </li>
+          <li class="nav-item col-md-4 d-flex justify-content-end p-0">
+            <button
+              role="button"
+              id="localNews"
+              class="btn-grad btn btn-primary b-none"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              Add Your News
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="color-bar"></div>
+      <div class="" id="navbar">
+      <div class="container" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a href="index.html" class="navbar-brand"
+            ><span class="sr-only">(current)</span>Home</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">National</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">World</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Sci-tech</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Space</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Sport</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoryPage.html">Environment</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="fakeNews.html">Fake News</a>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="categoryPage.html">Education</a>
+                <a class="dropdown-item" href="categoryPage.html">Environment</a>
+                
+                <a class="dropdown-item" href="categoryPage.html">Space</a>
+                <a class="dropdown-item" href="categoryPage.html">Health</a>
+              </div>
+            </li> -->
+            </ul>
+          </div>
+          <ul class="navbar-nav flex-row">
+          <li class="nav-item d-flex justify-content-end">
+            <a class="nav-link" href="#" id="weather">WEATHER</a>
+            <div
+              _ngcontent-stuff-experience-frontend-c38=""
+              class="weather-location-info hide"
+              id="siliguri-weather"
+            >
+              <app-weather-icon
+                _ngcontent-stuff-experience-frontend-c38=""
+                class="weather-icon"
+                _nghost-stuff-experience-frontend-c37=""
+                ><!----><!----><!----><!----><svg
+                  _ngcontent-stuff-experience-frontend-c37=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 67 76"
+                  class="weather-icon fewshowers"
+                >
+                  <path
+                    _ngcontent-stuff-experience-frontend-c37=""
+                    d="M54.29 18.36a11.52 11.52 0 0 0-2 .21 19.65 19.65 0 0 0-37.69 0 11.53 11.53 0 0 0-2-.21 12.71 12.71 0 0 0 0 25.41h8.09v18.49a2.31 2.31 0 1 0 4.62 0V43.78h16.28v18.48a2.31 2.31 0 1 0 4.62 0V43.78h8.09a12.71 12.71 0 0 0-.01-25.42zm0 20.79H12.71a8.09 8.09 0 0 1 0-16.17 8.24 8.24 0 0 1 1.38.19v2.12a2.31 2.31 0 1 0 4.62 0v-3.72a15 15 0 0 1 29.59 0v3.72a2.31 2.31 0 1 0 4.62 0v-2.12a8.29 8.29 0 0 1 1.37-.17 8.09 8.09 0 0 1 0 16.16z"
+                  ></path>
+                  <path
+                    _ngcontent-stuff-experience-frontend-c37=""
+                    d="M33.5 46.09a2.31 2.31 0 0 0-2.31 2.31v20.79a2.31 2.31 0 1 0 4.62 0V48.4a2.31 2.31 0 0 0-2.31-2.31z"
+                  ></path></svg
+                ><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></app-weather-icon
+              >
+              <div _ngcontent-stuff-experience-frontend-c38="">
+                <a
+                  _ngcontent-stuff-experience-frontend-c38=""
+                  class="weather-location-info-label weather-location"
+                  href="/national/weather/oamaru-forecast"
+                  >Siliguri</a
+                >
+                <div
+                  _ngcontent-stuff-experience-frontend-c38=""
+                  class="weather-min-max"
+                >
+                  <span _ngcontent-stuff-experience-frontend-c38=""
+                    ><span
+                      _ngcontent-stuff-experience-frontend-c38=""
+                      class="weather-location-info-label"
+                    ></span
+                    >8°C | </span
+                  ><span _ngcontent-stuff-experience-frontend-c38=""
+                    ><span
+                      _ngcontent-stuff-experience-frontend-c38=""
+                      class="weather-location-info-label"
+                    ></span
+                    >46°F
+                  </span>
+                </div>
+              </div>
+              <div
+                _ngcontent-stuff-experience-frontend-c38=""
+                class="weather-temp"
+              >
+                8°
+                <div
+                  _ngcontent-stuff-experience-frontend-c38=""
+                  class="celsius"
+                >
+                  C
+                </div>
+              </div>
+              <span class="location-icon"
+                ><i class="fa fa-map-marker" aria-hidden="true"></i
+              ></span>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fa fa-user f-s-18" aria-hidden="true"></i></a>
+            </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fa fa-cog f-s-18" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        </nav>
+        <!-- <hr /> -->
+      </div>
+      <div class="color-bar hide" id="color-bar"></div>
+      </div>
+    </div>
+    <!-- header component end -->
+    
+    <!-- Your should know component start-->
+    <div class="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="should-know-title">you should know</div>
+            <div class="owl-carousel owl-theme" id="slider_cat">
+              <div class="item">
+                <a class="cate_a" href="fullDetailsPage.html">
+                  <div class="cat_box">
+                    <div class="cate-box1">
+                      <div class="cat_offer_text">
+                        <img
+                          src="https://resources.stuff.co.nz/content/dam/images/4/y/o/6/8/g/image.related.StuffThumbnailSixteenByNine.1600x900.2128uc.11ys6n.png/1599630686540.jpg?format=pjpg&crop=16:9,smart&width=200"
+                          alt=""
+                        />
+                        <h5>Dad to be reunited with twins</h5>
+                        <!-- <div class="all_items">45 item</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a class="cate_a" href="fullDetailsPage.html">
+                  <div class="cat_box">
+                    <div class="cate-box1">
+                      <div class="cat_offer_text">
+                        <img
+                          src="https://resources.stuff.co.nz/content/dam/images/4/y/m/4/c/l/image.related.StuffThumbnailSixteenByNine.1600x900.4yo8nm.120x1p.png/1599631255429.jpg?format=pjpg&crop=16:9,smart&width=200"
+                          alt=""
+                        />
+                        <h5>Afternoon trivia challenge</h5>
+                        <!-- <div class="all_items">49 item</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a class="cate_a" href="fullDetailsPage.html">
+                  <div class="cat_box">
+                    <div class="cate-box1">
+                      <div class="cat_offer_text">
+                        <img
+                          src="https://resources.stuff.co.nz/content/dam/images/4/y/o/8/e/w/image.related.StuffThumbnailSixteenByNine.1600x900.211s9q.120x1p.png/1599631255429.jpg?format=pjpg&crop=16:9,smart&width=200"
+                          alt=""
+                        />
+                        <h5>Fisheran witness rare sight of white shark</h5>
+                        <!-- <div class="all_items">7 item</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a class="cate_a" href="fullDetailsPage.html">
+                  <div class="cat_box">
+                    <div class="cate-box1">
+                      <div class="cat_offer_text">
+                        <img
+                          src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/0/p/image.related.StuffThumbnailSixteenByNine.1600x900.2125s7.120x1p.png/1599631255429.jpg?format=pjpg&crop=16:9,smart&width=200"
+                          alt=""
+                        />
+                        <h5>The subrau legacy is no more</h5>
+                        <!-- <div class="all_items">19 item</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a class="cate_a" href="fullDetailsPage.html">
+                  <div class="cat_box">
+                    <div class="cate-box1">
+                      <div class="cat_offer_text">
+                        <img
+                          src="https://resources.stuff.co.nz/content/dam/images/4/y/o/5/o/5/image.related.StuffThumbnailSixteenByNine.1600x900.4yo8sz.120x1p.png/1599631255429.jpg?format=pjpg&crop=16:9,smart&width=200"
+                          alt=""
+                        />
+                        <h5>Many losers if Austria snares rugby</h5>
+                        <!-- <div class="all_items">40 item</div> -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Your should know component end-->
+    <!-- breaking point component start-->
+
+    <div class="container breaking-news">
+      <div class="heading orangeCenter d-flex justify-content-between">
+        <div class="breaking-point-title">breaking news</div>
+        <div class="see-all f-s-1">see all</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="fullDetailsPage.html" class="card">
+            <img
+              class="card-img-top"
+              style="height: 23.3rem;"
+              src="https://resources.stuff.co.nz/content/dam/images/4/y/o/a/y/9/image.related.StuffThumbnailSixteenByNine.1600x900.4yoaxj.png/1599805827592.jpg?format=pjpg&crop=16:9,smart&width=748"
+            />
+            <div class="card-body p-0-5">
+              <h5 class="card-title f-s-1-2">
+                EU still have work to do on 5G security ahead of European
+                rollout
+              </h5>
+              <p class="card-text f-s-0-8">
+                Edging towards a coordinated approach to 5G in Europe, the
+                Commission has released a progress report on reducing security
+                risks to future networks with...
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/m/h/y/4/image.related.StuffThumbnailSixteenByNine.1600x900.211sb4.11ys6n.png/1599559496531.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    America's Cup: MBIE opposes footing bill
+                  </h5>
+                  <!-- <p class="card-text f-s-0-8">
+                    The ministry footing $40 million of costs for next year’s
+                    America’s Cup regatta...
+                  </p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/5/b/image.related.StuffThumbnailSixteenByNine.1600x900.4yo95g.1zim15.png/1599623731028.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship.
+                  </h5>
+                  <!-- <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card h-40">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/4/u/t/image.related.StuffThumbnailSixteenByNine.1600x900.2120o1.11ys6n.png/1599559496531.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship
+                  </h5>
+                  <!-- <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card h-40">
+                <img
+                  class="card-img-top"
+                  src="https://static.euronews.com/articles/stories/04/52/65/98/400x225_cmsv2_293d0496-eec6-56ff-a5b1-eb07260eee24-4526598.jpg"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship
+                  </h5>
+                  <!-- <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p> -->
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- breaking point component end-->
+
+    <!-- coronavirus component start-->
+    <!-- coronavirus component end-->
+
+    <!-- national component start-->
+
+    <div class="container">
+      <div class="heading blueCenter d-flex justify-content-between">
+        <div class="f-s-2">national</div>
+        <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="fullDetailsPage.html" class="card">
+            <img
+              class="card-img-top"
+              style="height: 23.3rem;"
+              src="https://resources.stuff.co.nz/content/dam/images/4/y/n/g/k/r/image.related.StuffThumbnailSixteenByNine.1600x900.212836.png/1599726909065.jpg?format=pjpg&crop=16:9,smart&width=748"
+            />
+            <div class="card-body p-0-5">
+              <h5 class="card-title f-s-1-2">
+                EU still have work to do on 5G security ahead of European
+                rollout
+              </h5>
+              <p class="card-text f-s-0-8">
+                Edging towards a coordinated approach to 5G in Europe, the
+                Commission has released a progress report on reducing security
+                risks to future networks with...
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card">
+                <!-- <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                /> -->
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    America's Cup: MBIE opposes footing bill
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship.
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card h-40">
+                <!-- <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                /> -->
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card h-40">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a
+            href="fullDetailsPage.html"
+            class="card mb-3"
+            style="max-width: 540px;"
+          >
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">TVNZ name new head of news</h5>
+                  <p class="card-text f-s-0-8">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content..
+                  </p>
+                  <!-- <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <a
+            href="fullDetailsPage.html"
+            class="card mb-3"
+            style="max-width: 540px;"
+          >
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/m/i/i/r/image.related.StuffThumbnailSixteenByNine.1600x900.212ebn.11jm2n.png/1599699113936.jpg?format=pjpg&crop=16:9,smart&width=200"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lockdown cuts 2.0 spending</h5>
+                  <p class="card-text f-s-0-8">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content...
+                  </p>
+                  <!-- <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- national component end-->
+
+    <!-- world component start-->
+
+    <div class="container">
+      <div class="heading blueCenter d-flex justify-content-between">
+        <div class="f-s-2">world</div>
+        <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="fullDetailsPage.html" class="card">
+            <img
+              class="card-img-top"
+              style="height: 23.3rem;"
+              src="https://resources.stuff.co.nz/content/dam/images/4/y/o/a/y/9/image.related.StuffThumbnailSixteenByNine.1600x900.4yoaxj.png/1599805827592.jpg?format=pjpg&crop=16:9,smart&width=748"
+            />
+            <div class="card-body p-0-5">
+              <h5 class="card-title f-s-1-2">
+                EU still have work to do on 5G security ahead of European
+                rollout
+              </h5>
+              <p class="card-text f-s-0-8">
+                Edging towards a coordinated approach to 5G in Europe, the
+                Commission has released a progress report on reducing security
+                risks to future networks with...
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card">
+                <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    America's Cup: MBIE opposes footing bill
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship.
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card h-40">
+                <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="fullDetailsPage.html" class="card h-40">
+                <img
+                  class="card-img-top"
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                />
+                <div class="card-body p-0-5">
+                  <h5 class="card-title f-s-1">
+                    Senior teacher quits after alleged relationship
+                  </h5>
+                  <p class="card-text f-s-0-8">
+                    A senior teacher at an Otago school has left his job after
+                    allegations...
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a
+            href="fullDetailsPage.html"
+            class="card mb-3"
+            style="max-width: 540px;"
+          >
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">TVNZ name new head of news</h5>
+                  <p class="card-text f-s-0-8">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content..
+                  </p>
+                  <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <a
+            href="fullDetailsPage.html"
+            class="card mb-3"
+            style="max-width: 540px;"
+          >
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://resources.stuff.co.nz/content/dam/images/4/y/m/i/i/r/image.related.StuffThumbnailSixteenByNine.1600x900.212ebn.11jm2n.png/1599699113936.jpg?format=pjpg&crop=16:9,smart&width=200"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lockdown cuts 2.0 spending</h5>
+                  <p class="card-text f-s-0-8">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content...
+                  </p>
+                  <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- world component end-->
+
+    <!--featured videos component start-->
+    <div class="container bg-dark text-white">
+      <div class="heading whiteCenter d-flex justify-content-between">
+        <div class="f-s-2">featured videos</div>
+        <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="fullDetailsPage.html" class="card">
+            <img
+              class="card-img-top"
+              style="height: 23.3rem;"
+              src="https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6005208634001/818eec1c-2f75-4ae2-bf56-670c3ee2122d/cdcb92b9-febe-46c7-8d81-270053548518/640x360/match/image.jpg"
+            />
+            <div class="card-body p-0-5">
+              <h5 class="card-title f-s-1-2">
+                EU still have work to do on 5G security ahead of European
+                rollout
+              </h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-12">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="card-deck">
+          <div class="card">
+            <img
+              src="https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6005208634001/acc90cdf-8646-4e18-8f1d-bdc53a6328f1/ad2a8d17-7ab4-420b-8136-0b92ae6c58ee/320x180/match/image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry...
+              </h5>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6005208634001/acc90cdf-8646-4e18-8f1d-bdc53a6328f1/ad2a8d17-7ab4-420b-8136-0b92ae6c58ee/320x180/match/image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry...
+              </h5>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6005208634001/acc90cdf-8646-4e18-8f1d-bdc53a6328f1/ad2a8d17-7ab4-420b-8136-0b92ae6c58ee/320x180/match/image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry...
+              </h5>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6005208634001/acc90cdf-8646-4e18-8f1d-bdc53a6328f1/ad2a8d17-7ab4-420b-8136-0b92ae6c58ee/320x180/match/image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry...
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--featured videos component end-->
+
+    <!-- national component start-->
+
+    <div class="container">
+        <div class="heading blueCenter d-flex justify-content-between">
+          <div class="f-s-2">business</div>
+          <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="fullDetailsPage.html" class="card">
+              <img
+                class="card-img-top"
+                style="height: 23.3rem;"
+                src="https://resources.stuff.co.nz/content/dam/images/4/y/n/g/k/r/image.related.StuffThumbnailSixteenByNine.1600x900.212836.png/1599726909065.jpg?format=pjpg&crop=16:9,smart&width=748"
+              />
+              <div class="card-body p-0-5">
+                <h5 class="card-title f-s-1-2">
+                  EU still have work to do on 5G security ahead of European
+                  rollout
+                </h5>
+                <p class="card-text f-s-0-8">
+                  Edging towards a coordinated approach to 5G in Europe, the
+                  Commission has released a progress report on reducing security
+                  risks to future networks with...
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+  
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      America's Cup: MBIE opposes footing bill
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship.
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content..
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/m/i/i/r/image.related.StuffThumbnailSixteenByNine.1600x900.212ebn.11jm2n.png/1599699113936.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lockdown cuts 2.0 spending</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content...
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- business component end-->
+
+      <!-- sci-tech component start-->
+
+    <div class="container">
+        <div class="heading redCenter d-flex justify-content-between">
+          <div class="f-s-2">sci-tech</div>
+          <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="fullDetailsPage.html" class="card">
+              <img
+                class="card-img-top"
+                style="height: 23.3rem;"
+                src="https://resources.stuff.co.nz/content/dam/images/4/y/n/g/k/r/image.related.StuffThumbnailSixteenByNine.1600x900.212836.png/1599726909065.jpg?format=pjpg&crop=16:9,smart&width=748"
+              />
+              <div class="card-body p-0-5">
+                <h5 class="card-title f-s-1-2">
+                  EU still have work to do on 5G security ahead of European
+                  rollout
+                </h5>
+                <p class="card-text f-s-0-8">
+                  Edging towards a coordinated approach to 5G in Europe, the
+                  Commission has released a progress report on reducing security
+                  risks to future networks with...
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+  
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      America's Cup: MBIE opposes footing bill
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship.
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content..
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/m/i/i/r/image.related.StuffThumbnailSixteenByNine.1600x900.212ebn.11jm2n.png/1599699113936.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lockdown cuts 2.0 spending</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content...
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- sci-tech component end-->
+
+      <!-- space component start-->
+
+    <div class="container">
+        <div class="heading purpleCenter d-flex justify-content-between">
+          <div class="f-s-2">space</div>
+          <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="fullDetailsPage.html" class="card">
+              <img
+                class="card-img-top"
+                style="height: 23.3rem;"
+                src="https://resources.stuff.co.nz/content/dam/images/4/y/n/g/k/r/image.related.StuffThumbnailSixteenByNine.1600x900.212836.png/1599726909065.jpg?format=pjpg&crop=16:9,smart&width=748"
+              />
+              <div class="card-body p-0-5">
+                <h5 class="card-title f-s-1-2">
+                  EU still have work to do on 5G security ahead of European
+                  rollout
+                </h5>
+                <p class="card-text f-s-0-8">
+                  Edging towards a coordinated approach to 5G in Europe, the
+                  Commission has released a progress report on reducing security
+                  risks to future networks with...
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+  
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      America's Cup: MBIE opposes footing bill
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship.
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content..
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/m/i/i/r/image.related.StuffThumbnailSixteenByNine.1600x900.212ebn.11jm2n.png/1599699113936.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lockdown cuts 2.0 spending</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content...
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- space component end-->
+
+      <!-- environment component start-->
+
+    <div class="container">
+        <div class="heading greenCenter d-flex justify-content-between">
+          <div class="f-s-2">environment</div>
+          <div class="see-all f-s-1"><a href="national.html">see all</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="fullDetailsPage.html" class="card">
+              <img
+                class="card-img-top"
+                style="height: 23.3rem;"
+                src="https://resources.stuff.co.nz/content/dam/images/4/y/n/g/k/r/image.related.StuffThumbnailSixteenByNine.1600x900.212836.png/1599726909065.jpg?format=pjpg&crop=16:9,smart&width=748"
+              />
+              <div class="card-body p-0-5">
+                <h5 class="card-title f-s-1-2">
+                  EU still have work to do on 5G security ahead of European
+                  rollout
+                </h5>
+                <p class="card-text f-s-0-8">
+                  Edging towards a coordinated approach to 5G in Europe, the
+                  Commission has released a progress report on reducing security
+                  risks to future networks with...
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </a>
+          </div>
+  
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      America's Cup: MBIE opposes footing bill
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship.
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <!-- <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  /> -->
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="fullDetailsPage.html" class="card h-40">
+                  <img
+                    class="card-img-top"
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/o/9/q/1/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9pd.png/1599717468362.jpg?format=pjpg&crop=16:9,smart&width=300"
+                  />
+                  <div class="card-body p-0-5">
+                    <h5 class="card-title f-s-1">
+                      Senior teacher quits after alleged relationship
+                    </h5>
+                    <p class="card-text f-s-0-8">
+                      A senior teacher at an Otago school has left his job after
+                      allegations...
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/n/z/z/8/image.related.StuffThumbnailSixteenByNine.1600x900.4yo9sl.11jm2n.png/1599702885965.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">TVNZ name new head of news</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content..
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a
+              href="fullDetailsPage.html"
+              class="card mb-3"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img
+                    src="https://resources.stuff.co.nz/content/dam/images/4/y/m/i/i/r/image.related.StuffThumbnailSixteenByNine.1600x900.212ebn.11jm2n.png/1599699113936.jpg?format=pjpg&crop=16:9,smart&width=200"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lockdown cuts 2.0 spending</h5>
+                    <p class="card-text f-s-0-8">
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content...
+                    </p>
+                    <!-- <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- environment component end-->
+
+      
+
+    <!--your news modal start-->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Headline</label>
+                  <input type="text" class="form-control" id="inputPassword4" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Upload Image</label>
+                <div class="custom-file">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="customFile"
+                  />
+                  <label class="custom-file-label" for="customFile"
+                    >Choose file</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Description</label>
+                <textarea
+                  type="textarea"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder="Write something on this issue"
+                ></textarea>
+              </div>
+              <!-- <div class="form-group">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div> -->
+              <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="color-bar"></div>
+      <div class="d-flex container">
+        <div class="footer-info">
+          <h4>Breaking news?</h4>
+          Send your photos, videos and tip-offs to <br /><a
+            href="mailto:newstips@stuff.co.nz"
+            >newssagar@news.co.nz</a
+          >, or call us on 09933 878 928
+        </div>
+        <div class="d-flex">
+          <span class="socail-media-icons"
+            ><i class="fa fa-facebook-square" aria-hidden="true"></i
+          ></span>
+          <span class="socail-media-icons"
+            ><i class="fa fa-twitter-square" aria-hidden="true"></i
+          ></span>
+          <span class="socail-media-icons"
+            ><i class="fa fa-reddit-square" aria-hidden="true"></i
+          ></span>
+          <span class="socail-media-icons"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></span>
+        </div>
+      </div>
+      <div class="footer-end">@2020 sagar pvt ltd</div>
+    </div>
+    <!--your news modal end-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
